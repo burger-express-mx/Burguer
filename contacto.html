@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Burguer Express - Contacto</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url("fondo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:50px;
+    color:#f1c40f;
+}
+
+.linea{
+    width:120px;
+    height:4px;
+    background:#f1c40f;
+    margin:15px auto;
+    border-radius:5px;
+}
+
+/* Navegación */
+.menu-nav{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.menu-nav a{
+    text-decoration:none;
+    color:white;
+    margin:10px;
+    padding:10px 25px;
+    border:2px solid #f1c40f;
+    border-radius:25px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.menu-nav a:hover{
+    background:#f1c40f;
+    color:black;
+    transform:scale(1.1);
+}
+
+/* Contenedor formulario */
+.contenedor{
+    width:90%;
+    max-width:600px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:25px;
+    background:#f1c40f;
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ffd700;
+    transform:scale(1.05);
+}
+
+/* Información extra */
+.info{
+    text-align:center;
+    margin-top:30px;
+    font-size:16px;
+}
+
+footer{
+    text-align:center;
+    margin:40px 0;
+    font-size:14px;
+    opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="/storage/emulated/0/Erick/Imagen/logo.jpg" class="logo">
+<h1>Contacto</h1>
+<div class="linea"></div>
+</header>
+
+<div class="menu-nav">
+    <a href="index.html">Inicio</a>
+    <a href="menú.html">Menú</a>
+    <a href="promocion.html">Promoción</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+
+<div class="contenedor">
+
+<form>
+    <label>Nombre:</label>
+    <input type="text" required>
+
+    <label>Correo electrónico:</label>
+    <input type="email" required>
+
+    <label>Mensaje:</label>
+    <textarea required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+</form>
+
+<div class="info">
+    📍 Dirección: Tu dirección aquí <br><br>
+    📞 Teléfono: 000-000-0000 <br><br>
+    📲 WhatsApp: 000-000-0000
+</div>
+
+</div>
+
+<footer>
+© 2026 Burguer Express | Estamos para atenderte
+</footer>
+
+</body>
+</html>
